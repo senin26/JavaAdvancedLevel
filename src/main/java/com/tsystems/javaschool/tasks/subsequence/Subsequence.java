@@ -15,6 +15,17 @@ public class Subsequence {
     @SuppressWarnings("rawtypes")
     public boolean find(List x, List y) {
         // TODO: Implement the logic here
-        return false;
+        boolean possible = false;
+        int indexObjX = 0;
+        for (Object eachElement : y) {
+            if (x.get(indexObjX).equals(eachElement)) {
+                indexObjX++;
+                if (indexObjX == x.size()) {
+                    possible = true;
+                    break;
+                }
+            }
+        }
+        return possible;
     }
 }
