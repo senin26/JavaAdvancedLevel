@@ -1,4 +1,4 @@
-package Lesson_6.client;
+package client;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
