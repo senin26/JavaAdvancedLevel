@@ -64,7 +64,7 @@ public class Controller {
             clientList.setVisible(false);
             clientList.setManaged(false);
             if (toDisconnect){
-                chatBox.setVisible(false);
+                Platform.exit();
             }
         } else  {
             upperPanel.setVisible(false);
